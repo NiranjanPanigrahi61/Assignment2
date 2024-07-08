@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="../css/Media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav id="navBarDiv">
+            <div id="titleDiv">
+                <img src="../logo/w_logo.jpg" alt="logo">
+                <pre>Workspace</pre>
+            </div>
+            <div id="searchDiv">
+                <input type="text" placeholder="search in home">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="mainBodyDiv">
+            <div id="leftSideNavBarDiv">
+                <div id="optionDIv">
+                    <a class="" href="Home.html" id="homeOption" onclick="activeHome()"><i class="fa-solid fa-house"></i>Homer</a>
+                    <a class="" href="Customer.html" id="customerOption" onclick="activeCustomer()"><i class="fa-solid fa-user-group"></i>Customer</a>
+                    <a class="" href="Department.html" id="departmentOption" onclick="activeDepartment()"><i class="fa-solid fa-address-card"></i>Department</a>
+                    <a class="active" href="Media.html" id="mediaOption" onclick="activeMedia()"><i class="fa-solid fa-image"></i>Media</a>
+                </div>
+                <div id="userDIv">
+                    <a class="" href="myAccount.html" style="padding: 20px 94px 20px 10px;" id="myAccounntOption" onclick="activeMyAccount()"><i class="fa-solid fa-user"></i>My Account</a>
+                </div>
+            </div>
+            <div id="rightSideBodyDiv">
+                <label for="iamgeDIv" id="Image">IMAGES</label>
+                <div id="iamgeDIv">
+                    <div><img src="../images/image1.avif" alt="img1" id="image1"></div>
+                    <div><img src="../images/image2.avif" alt="img2" id="image2"></div>
+                    <div><img src="../images/image3.avif" alt="img3" id="image3"></div>
+                    <div><img src="../images/image4.avif" alt="img4" id="image4"></div>
+                    <div><img src="../images/image5.avif" alt="img5" id="image5"></div>
+                    <div><img src="../images/image6.avif" alt="img6" id="image6"></div>
+                </div>
+                
+                <label for="videoDiv" id="Video">VIDEO</label>
+                <div id="videoDiv">
+                    <iframe width="903" height="508" src="https://www.youtube.com/embed/j7GG009J9uc" title="Create A Slider Crazy Effects Using HTML CSS And Javascript" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <iframe width="903" height="508" src="https://www.youtube.com/embed/i9t8gdaBsTg" title="How to create 3D Website Designs With No Code" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <iframe width="903" height="508" src="https://www.youtube.com/embed/6wBAamTOr3A" title="How To Build a $20,000 3D Website (No Code + AI)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+               
+                <label for="audioDiv" id="Audio">AUDIO</label>
+                <div id="audioDiv">
+                    <audio controls>
+                        <source src="../audio/sample-12s.mp3" type="audio/mp3">
+                    </audio>
+                    <audio controls>
+                        <source src="../audio/sample-15s.mp3" type="audio/mp3">
+                    </audio>
+                    <audio controls>
+                        <source src="../audio/sample-9s.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <script src="../js/active.js"></script>
+    </main>
+</body>
+
+</html>

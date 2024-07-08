@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="../css/myAccount.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav id="navBarDiv">
+            <div id="titleDiv">
+                <img src="../logo/w_logo.jpg" alt="logo">
+                <pre>Workspace</pre>
+            </div>
+            <div id="searchDiv">
+                <input type="text" placeholder="search in home">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="mainBodyDiv">
+            <div id="leftSideNavBarDiv">
+                <div id="optionDIv">
+                    <a class="" href="Home.html" id="homeOption" onclick="activeHome()"><i class="fa-solid fa-house"></i>Homer</a>
+                    <a class="" href="Customer.html" id="customerOption" onclick="activeCustomer()"><i class="fa-solid fa-user-group"></i>Customer</a>
+                    <a class="" href="Department.html" id="departmentOption" onclick="activeDepartment()"><i class="fa-solid fa-address-card"></i>Department</a>
+                    <a class="" href="Media.html" id="mediaOption" onclick="activeMedia()"><i class="fa-solid fa-image"></i>Media</a>
+                </div>
+                <div id="userDIv">
+                    <a class="active" href="myAccount.html" style="padding: 20px 94px 20px 10px;" id="myAccounntOption" onclick="activeMyAccount()"><i class="fa-solid fa-user"></i>My Account</a>
+                </div>
+            </div>
+            <div id="rightSideBodyDiv">
+                <div id="iamgeDIv">
+                    <img src="../logo/w_logo.jpg" alt="imageid">
+                    <i class="fa-solid fa-pen" onclick="editField('logo')"></i>
+                </div>
+                <form id="userForm" action="">
+                    <label for="userName">Name</label><br>
+                    <input type="text" id="userName"><i class="fa-solid fa-pen" onclick="editField('userName')"></i><br><br>
+                    <label for="userEmail">Email</label><br>
+                    <input type="email" id="userEmail"><i class="fa-solid fa-pen" onclick="editField('userEmail')"></i><br><br>
+                    <label for="phnNumber">Phone Number</label><br>
+                    <input type="text" id="phnNumber"><i class="fa-solid fa-pen" onclick="editField('phnNumber')"></i><br><br>
+                    <label for="dob">Date Of Birth</label><br>
+                    <input type="date" id="dob"><i class="fa-solid fa-pen" onclick="editField('dob')"></i><br><br>
+                </form>
+                <div id="bttnDiv">
+                    <button type="button" id="submitBttn" onclick="saveData()">SAVE</button>
+                    <button type="reset" id="resetBttn" onclick="resetForm()">CANCEL</button>
+                </div>
+            </div>
+            
+        <script src="../js/active.js"></script>
+    </main>
+</body>
+
+</html>
