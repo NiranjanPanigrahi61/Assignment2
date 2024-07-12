@@ -97,7 +97,6 @@
     margin-left: 10px;
     font-size: 30px;
     cursor: pointer;
-
 }
 #iamgeDIv{
     object-fit: cover;
@@ -138,4 +137,10 @@
     font-family: Arial;
     font-weight: bolder;
     cursor: pointer;
+}
+#responseLabel{
+    font-size:30px ;
+    color: rgb(47, 255, 61);
+    font-weight: bolder;
+    text-align: center;
 }

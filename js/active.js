@@ -38,4 +38,31 @@ function activeMyAccount(){
     document.getElementById("myAccounntOption").classList.add("active");
     
 }
-
+function saveData(){
+    // window.alert("Data Updated.");
+    document.getElementById("responseLabel").textContent=`Data is Updated`;
+}
+function editField1(){
+    document.getElementById("userName").removeAttribute('readonly');
+    document.getElementById("userEmail").setAttribute('readonly',true);
+    document.getElementById("phnNumber").setAttribute('readonly',true);
+    document.getElementById("dob").setAttribute('readonly',true);
+}
+function editField2(){
+    document.getElementById("userEmail").removeAttribute('readonly');
+    document.getElementById("userName").setAttribute('readonly',true);
+    document.getElementById("phnNumber").setAttribute('readonly',true);
+    document.getElementById("dob").setAttribute('readonly',true);
+}
+function editField3(){
+    document.getElementById("phnNumber").removeAttribute('readonly');
+    document.getElementById("userEmail").setAttribute('readonly',true);
+    document.getElementById("userName").setAttribute('readonly',true);
+    document.getElementById("dob").setAttribute('readonly',true);
+}
+function editField4(){
+    document.getElementById("dob").removeAttribute('readonly');
+    document.getElementById("phnNumber").setAttribute('readonly',true);
+    document.getElementById("userEmail").setAttribute('readonly',true);
+    document.getElementById("userName").setAttribute('readonly',true);
+}

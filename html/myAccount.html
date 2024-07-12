@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/myAccount.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
                 <pre>Workspace</pre>
             </div>
             <div id="searchDiv">
-                <input type="text" placeholder="search in home">
+                <input type="text" placeholder="search in My Account">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </nav>
@@ -43,24 +43,25 @@
                     <img src="../logo/w_logo.jpg" alt="imageid">
                     <i class="fa-solid fa-pen" onclick="editField('logo')"></i>
                 </div>
-                <form id="userForm" action="">
+                <form id="userForm">
                     <label for="userName">Name</label><br>
-                    <input type="text" id="userName"><i class="fa-solid fa-pen" onclick="editField('userName')"></i><br><br>
+                    <input type="text" id="userName" readonly value="John Doe
+                    "><i class="fa-solid fa-pen" onclick="editField1()"></i><br><br>
                     <label for="userEmail">Email</label><br>
-                    <input type="email" id="userEmail"><i class="fa-solid fa-pen" onclick="editField('userEmail')"></i><br><br>
+                    <input type="email" id="userEmail" readonly value="example@gmail.com"><i class="fa-solid fa-pen" onclick="editField2()"></i><br><br>
                     <label for="phnNumber">Phone Number</label><br>
-                    <input type="text" id="phnNumber"><i class="fa-solid fa-pen" onclick="editField('phnNumber')"></i><br><br>
+                    <input type="text" id="phnNumber" readonly value="9134837948"><i class="fa-solid fa-pen" onclick="editField3()"></i><br><br>
                     <label for="dob">Date Of Birth</label><br>
-                    <input type="date" id="dob"><i class="fa-solid fa-pen" onclick="editField('dob')"></i><br><br>
+                    <input type="date" id="dob"readonly value="2023-05-09">
+                    <i class="fa-solid fa-pen" onclick="editField4('dob')"></i><br><br>
+                    <label id="responseLabel"></label>
                 </form>
                 <div id="bttnDiv">
                     <button type="button" id="submitBttn" onclick="saveData()">SAVE</button>
                     <button type="reset" id="resetBttn" onclick="resetForm()">CANCEL</button>
                 </div>
             </div>
-            
         <script src="../js/active.js"></script>
     </main>
 </body>
-
 </html>
